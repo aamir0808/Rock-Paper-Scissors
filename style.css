@@ -1,0 +1,216 @@
+/* *{
+    margin: 0px;
+    padding:0px;
+}
+
+h1{
+    background-color: red;
+    text-align: center;
+    line-height: 90px;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+
+.choice{
+    height: 200px;
+    width: 180px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-left: 60px;
+    padding-left: 26px;
+    border-radius: 20px;
+}
+
+.choice:hover{
+    cursor: pointer; 
+    background-color: rgb(47, 45, 45);
+    
+}
+
+
+img{
+    height: 120px;
+    width: 130px;
+    border-radius:40px;
+    object-fit: cover;
+    border: 9px solid blue; 
+
+}
+.score-broad{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.user-score , .comp-score{
+    font-size: 40px;
+    margin-right: 30px;
+}
+
+.com-respose{
+    height: 60px;
+    margin: 25px 200px 0px 300px;
+    border-radius: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+.com-respose #com_talk{
+    font-size: 30px;
+}
+.message-container{
+
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.message-container .message{
+    font-size: 50px;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+ */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header */
+h1 {
+    background: linear-gradient(90deg, #ff4b4b, #ff8c42);
+    text-align: center;
+    padding: 25px 0;
+    color: white;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+
+/* Choices */
+.choices {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 3rem;
+}
+
+.choice {
+    height: 180px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Images */
+img {
+    height: 120px;
+    width: 130px;
+    border-radius: 20px;
+    object-fit: cover;
+    border: 6px solid #0044ff;
+    transition: 0.25s;
+}
+
+img:hover {
+    border-color: #ffbf00;
+}
+
+/* Scoreboard */
+.score-broad {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.user-score, .comp-score {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #222;
+}
+
+.user-score p,
+.comp-score p {
+    margin: 5px 0;
+}
+
+/* Computer Response */
+.com-respose {
+    margin: 35px auto 0;
+    width: 60%;
+    height: 70px;
+    border-radius: 40px;
+    background-color: #ffdde1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255, 100, 100, 0.4);
+}
+
+#com_talk {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Message Box */
+.message-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    font-size: 2.5rem;
+    background-color: #8a2be2;
+    padding: 12px 25px;
+    border-radius: 18px;
+    color: white;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .choices {
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .choice {
+        height: 150px;
+        width: 140px;
+    }
+
+    .score-broad {
+        gap: 3rem;
+    }
+
+    .message {
+        font-size: 1.8rem;
+    }
+
+    #com_talk {
+        font-size: 1.3rem;
+    }
+}
